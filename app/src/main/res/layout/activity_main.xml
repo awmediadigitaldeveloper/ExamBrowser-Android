@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_gravity="top"
+        android:visibility="gone"
+        android:progressTint="#4CAF50"
+        android:progressBackgroundTint="#1a1a2e"
+        android:max="100" />
+
+    <!-- Exam mode indicator - tap 5x fast to access admin -->
+    <TextView
+        android:id="@+id/tvExamMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="  EXAM MODE  "
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:background="#CC1B5E20"
+        android:padding="4dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+</FrameLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a2e">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXAM BROWSER"
+            android:textColor="#4CAF50"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konfigurasi"
+            android:textColor="#AAAACC"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Exam URL -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL Ujian *"
+            app:hintTextColor="#AAAAAA"
+            app:boxStrokeColor="#4CAF50"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etExamUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textUri"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#666688"
+                android:hint="https://ujian.sekolah.ac.id"
+                android:imeOptions="actionNext" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Allow All URLs checkbox -->
+        <CheckBox
+            android:id="@+id/cbAllowAllUrls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Izinkan semua URL (tidak ada pembatasan)"
+            android:textColor="#CCCCCC"
+            android:buttonTint="#4CAF50"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Allowed URLs -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilAllowedUrls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL yang Diizinkan (satu per baris)"
+            app:hintTextColor="#AAAAAA"
+            app:boxStrokeColor="#4CAF50"
+            app:helperText="Contoh: ujian.sekolah.ac.id"
+            app:helperTextTextColor="#888888"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAllowedUrls"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#666688"
+                android:hint="ujian.sekolah.ac.id&#10;cdn.sekolah.ac.id" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Exit PIN -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PIN Keluar (min. 4 digit) *"
+            app:hintTextColor="#AAAAAA"
+            app:boxStrokeColor="#4CAF50"
+            app:helperText="PIN ini digunakan peserta/pengawas untuk keluar ujian"
+            app:helperTextTextColor="#888888"
+            app:endIconMode="password_toggle"
+            android:layout_marginBottom="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etExitPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:textColor="#FFFFFF"
+                android:hint="1234"
+                android:imeOptions="actionNext" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Admin PIN -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PIN Admin (min. 4 digit) *"
+            app:hintTextColor="#AAAAAA"
+            app:boxStrokeColor="#4CAF50"
+            app:helperText="PIN ini digunakan admin untuk mengubah pengaturan"
+            app:helperTextTextColor="#888888"
+            app:endIconMode="password_toggle"
+            android:layout_marginBottom="32dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAdminPin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:hint="admin123"
+                android:imeOptions="actionDone" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="SIMPAN DAN MULAI"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1B5E20"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Cancel Button -->
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="BATAL"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#424242"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tip: Ketuk indikator EXAM MODE sebanyak 5x untuk membuka pengaturan admin"
+            android:textColor="#666688"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>

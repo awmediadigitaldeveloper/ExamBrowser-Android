@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exam Browser</string>
+    <string name="exam_mode">EXAM MODE</string>
+    <string name="enter_pin">Masukkan PIN</string>
+    <string name="wrong_pin">PIN salah! Coba lagi.</string>
+    <string name="settings_saved">Pengaturan disimpan!</string>
+    <string name="url_blocked">Akses URL tidak diizinkan</string>
+    <string name="exit_exam">Keluar Ujian</string>
+    <string name="cancel">Batal</string>
+    <string name="save">Simpan</string>
+</resources>

@@ -1,0 +1,26 @@
+# Build outputs
+*.apk
+*.aab
+*.ap_
+*.dex
+build/
+app/build/
+
+# Gradle
+.gradle/
+local.properties
+gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keys / secrets (JANGAN dicommit!)
+*.jks
+*.keystore
+keystore.properties

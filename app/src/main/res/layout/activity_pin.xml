@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#1a1a2e">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan PIN"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- PIN dots display -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2d2d5e"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:id="@+id/tvPinDisplay"
+            android:layout_width="240dp"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:letterSpacing="0.5"
+            android:hint="----"
+            android:textColorHint="#555577" />
+
+    </LinearLayout>
+
+    <!-- Number pad -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:text="&#x232B;"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#8B1A1A"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:text="0"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2d2d5e"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:text="OK"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1B5E20"
+            android:layout_margin="4dp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:text="BATAL"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#424242"
+        android:textSize="14sp" />
+
+</LinearLayout>
